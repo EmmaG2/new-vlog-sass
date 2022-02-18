@@ -1,0 +1,43 @@
+@import 'colors';
+
+header {
+  background-color: #444;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 5px 8px;
+        list-style: none;
+
+        a {
+          font-family: $font-text;
+          text-decoration: none;
+          color: $ezra-red;
+          transition: .4s;
+          cursor: pointer;
+
+        }
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  nav {
+    ul {
+      li {
+        .link:hover {
+          color: $ezra-blue;
+        }
+      }
+    }
+  }
+}
