@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   status: boolean = false;
-  mostrar() {
-    this.status = !this.status;
-  }
+  mostrar() { this.status = !this.status; }
 }

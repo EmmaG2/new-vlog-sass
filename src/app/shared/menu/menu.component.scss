@@ -1,4 +1,9 @@
 @import 'colors';
+@import 'sizes';
+
+.icon {
+  margin: .21em;
+}
 
 .menu-icon {
   position: absolute;
@@ -7,18 +12,19 @@
   top: .5rem;
   right: 1.5rem;
   cursor: pointer;
-  z-index: 20;
+  z-index: 30;
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: .5rem;
   left: 1.5rem;
-  z-index: 20;
+  z-index: 30;
 }
 
 .main-menu {
-  background-color: lightcoral;
+  background-color: $ezra-black;
+  position: relative;
   list-style: none;
   margin-top: 0;
 
@@ -27,14 +33,18 @@
   align-items: center;
   transition: transform .3s;
   transform: translateY(-100%);
+  z-index: 20;
+  color: $ezra-white;
+  font-size: $font-size-header;
 
-  .main-menu__item {
+  &__item {
     padding: 1em;
   }
 
-  .main-menu__link {
+  &__link {
     color: $ezra-white;
     text-decoration: none;
+    font-size: $font-size-header;
   }
 }
 
@@ -49,9 +59,43 @@
     display: none;
   }
 
-  .main-menu {
-    flex-direction: row;
-    justify-content: center;
-    transform: translateY(0) !important;
+  .logo {
+    position: static;
+  }
+
+  .main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: .3s;
+    padding: .2em .1em;
+    z-index: 10;
+
+    &-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-menu {
+      background-color: rgba(0, 0, 0, 0);
+      position: relative;
+      flex-direction: row;
+      transform: translateY(0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-menu__link {
+      position: relative;
+      margin: 0 1rem;
+      letter-spacing: .4px;
+      transition: .3s;
+      font-size: $font-size-header;
+    }
   }
 }
