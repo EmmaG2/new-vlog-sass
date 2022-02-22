@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuComponent } from './menu/menu.component';
-import { BackgroundComponent } from './background/background.component';
-import { ErrorComponent } from './error/error.component';
-import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from '@shared/menu/menu.component';
+import { BackgroundComponent } from '@shared/background/background.component';
+import { ErrorComponent } from '@shared/error/error.component';
+import { FooterComponent } from '@shared/footer/footer.component';
 
 @NgModule({
   declarations: [
