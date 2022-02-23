@@ -1,9 +1,7 @@
 export interface menu {
-  textLink  : string;
+  text      : string;
   classIcon : string;
-  classItem : string;
   classHover: string;
-  classLink : string;
-  routerLink: string;
-  activeLink: string;
+  route     : string;
+  routeActive: string;
 }

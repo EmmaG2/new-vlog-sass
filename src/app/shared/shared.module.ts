@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuComponent } from '@shared/menu/menu.component';
-import { BackgroundComponent } from '@shared/background/background.component';
-import { ErrorComponent } from '@shared/error/error.component';
-import { FooterComponent } from '@shared/footer/footer.component';
+import { RouterModule } from '@angular/router';
+
+import { BackgroundComponent } from '@views/background/background.component';
+import { ErrorComponent } from '@views/error/error.component';
+import { FooterComponent } from '@views/footer/footer.component';
+import { MenuComponent } from '@views/menu/menu.component';
 
 @NgModule({
   declarations: [
-    MenuComponent,
     BackgroundComponent,
     ErrorComponent,
     FooterComponent,
+    MenuComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [MenuComponent, BackgroundComponent, FooterComponent],
 })
 export class SharedModule {}

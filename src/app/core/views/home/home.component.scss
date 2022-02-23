@@ -1,0 +1,12 @@
+@import 'colors';
+
+.tittle {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2em;
+
+  &::first-letter {
+    font-size: 1.8em;
+    color: $ezra-red;
+  }
+}

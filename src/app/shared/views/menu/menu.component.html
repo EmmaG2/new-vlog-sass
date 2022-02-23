@@ -1,0 +1,20 @@
+<header class="main">
+  <nav class="main-nav">
+    <div class="menu-icon" (click)="mostrar()">
+      <i class="icon ion-ios-menu"></i>
+    </div>
+    <div class="logo">
+      <a routerLink="[./home/]">logo</a>
+    </div>
+    <ul class="main-menu" [ngClass]="status ? 'main-menu__show' : ''">
+      <li *ngFor="let m of menuData"
+          class="main-menu__item"
+          [class]="m.classHover"
+          [routerLink]="[m.route]"
+          [routerLinkActive]="m.routeActive">
+        <i [class]="m.classIcon"></i>
+        {{ m.text | titlecase}}
+      </li>
+    </ul>
+  </nav>
+</header>

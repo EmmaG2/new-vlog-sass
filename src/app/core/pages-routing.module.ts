@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from '@pages/about/about.component';
-import { ContactoComponent } from '@pages/contacto/contacto.component';
-import { HomeComponent } from '@pages/home/home.component';
+import { AboutComponent } from '@views/about/about.component';
+import { ContactoComponent } from '@views/contacto/contacto.component';
+import { HomeComponent } from '@views/home/home.component';
 
 const routes: Routes = [
   {
