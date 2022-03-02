@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ErrorComponent } from '@shared/error/error.component';
+import { ErrorComponent } from '@shared/views/error/error.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () =>
-      import('./pages/pages.module').then((m) => m.PagesModule),
+    path: 'core',
+    loadChildren: () => import('./core/pages.module').then((m) => m.PagesModule)
   },
   {
     path: '404',
@@ -14,8 +13,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'home',
-    // pathMatch: 'full',
+    redirectTo: 'core',
+    pathMatch: 'full',
   },
 ];
 
