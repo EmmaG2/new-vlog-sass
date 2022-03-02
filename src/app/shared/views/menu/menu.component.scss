@@ -6,28 +6,32 @@
 }
 
 .menu-icon {
-  position: absolute;
+  position: fixed;
   font-size: 40px;
-  color: $ezra-white;
-  top: .5rem;
-  right: 1.5rem;
+  color: #111;
+  top: .3rem;
+  right: .3rem;
   cursor: pointer;
   z-index: 30;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .logo {
   position: fixed;
-  top: .5rem;
-  left: 1.5rem;
+  top: .2rem;
+  left: .3rem;
   z-index: 30;
+  margin-right: .5em;
+  cursor: pointer;
 }
 
 .main-menu {
-  background-color: $ezra-black;
+  background-color: $ezra-white;
   position: relative;
   list-style: none;
-  margin-top: 0;
-  // padding: 0;
+  margin-top: -10px;
+  padding: 0;
+  border-radius: 0 0 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -37,10 +41,11 @@
   z-index: 20;
   color: $ezra-white;
   font-size: $font-size-header;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 3px;
 
   &__item {
     padding: 1em;
-    color: $ezra-white;
+    color: $ezra-black;
     text-decoration: none;
     font-size: $font-size-header;
     transition: color $ezra-t-m;
@@ -73,8 +78,6 @@
   transform: translateY(0);
 }
 
-
-
 @media screen and (min-width: 768px) {
   .menu-icon {
     display: none;
@@ -82,6 +85,8 @@
 
   .logo {
     position: static;
+    cursor: auto;
+    margin-right: 1em;
   }
 
   .main {
@@ -92,8 +97,8 @@
     display: flex;
     justify-content: space-around;
     transition: $ezra-t-m;
-    padding: .2em .1em;
     z-index: 10;
+    // padding: 10px;
 
     &-nav {
       display: flex;
@@ -102,14 +107,14 @@
     }
 
     &-menu {
-      background-color: rgba(0, 0, 0, 0);
       position: relative;
       flex-direction: row;
       transform: translateY(0);
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
+      // margin-top: -15px;
     }
-
   }
 }

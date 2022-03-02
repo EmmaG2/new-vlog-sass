@@ -7,10 +7,11 @@ import { menu } from '@shared/interfaces/menu.interface';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
+  ez: string = '../../../../assets/ez.png';
 
   status: boolean = false;
   mostrar() {
-    this.status = !this.status;
+  this.status = !this.status;
   }
 
   menuData: menu[] = [
@@ -19,23 +20,26 @@ export class MenuComponent {
       classHover : 'main-menu__hover1',
       classIcon  : 'icon ion-ios-home',
       text       : 'posts',
-      route      : './home/posts'
+      route      : './core/homeposts/'
     },
     {
       routeActive: 'main-menu__active2',
       classHover : 'main-menu__hover2',
       classIcon  : 'icon ion-ios-person',
       text       : 'about',
-      route      : './home/about'
+      route      : './core/about'
     },
     {
       routeActive: 'main-menu__active1',
       classHover : 'main-menu__hover1',
       classIcon  : 'icon ion-ios-call',
       text       : 'contacto',
-      route      : './home/contacto'
+      route      : './core/contacto'
     },
   ];
 
-
+  scrollTop() {
+    const header = document.querySelector('.main');
+    header?.scrollIntoView({behavior: 'smooth'});
+  }
 }

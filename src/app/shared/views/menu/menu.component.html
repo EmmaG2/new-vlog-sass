@@ -1,14 +1,22 @@
-<header class="main">
-  <nav class="main-nav">
-    <div class="menu-icon" (click)="mostrar()">
+<header class="main" id="header">
+  <nav class="main-nav abajo">
+    <div  class="menu-icon"
+          (click)="mostrar()"
+          (click)="scrollTop()">
       <i class="icon ion-ios-menu"></i>
     </div>
-    <div class="logo">
-      <a routerLink="[./home/]">logo</a>
+    <div  (click)="scrollTop()"
+          class="logo">
+        <img
+            class="logo-img"
+            [src]="ez"
+            height="75px"
+            width="75px">
     </div>
     <ul class="main-menu" [ngClass]="status ? 'main-menu__show' : ''">
       <li *ngFor="let m of menuData"
           class="main-menu__item"
+          (click)="mostrar()"
           [class]="m.classHover"
           [routerLink]="[m.route]"
           [routerLinkActive]="m.routeActive">
