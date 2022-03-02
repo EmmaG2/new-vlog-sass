@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60vh 1em 1em;
+  margin: calc(55vh - 166px) 1em 1em;
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    margin-top: 100vh;
+    margin: 55vh 1em 1em;
   }
 }
