@@ -1,0 +1,36 @@
+@import 'colors';
+
+@font-face {
+  font-family: 'lemon milk';
+  src: url(assets/LEMONMILK-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+hr.hr {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .32), rgba(0, 0, 0, 0));
+}
+
+html {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $ezra-gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $ezra-red;
+    border-radius: 2rem;
+    border: 2px solid $ezra-red;
+    /* creates padding around scroll thumb */
+  }
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $ezra-red $ezra-gray;
+}
