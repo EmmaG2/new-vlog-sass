@@ -9,6 +9,10 @@ const routes: Routes = [
       import('./pages/pages.module').then((m) => m.PagesModule),
   },
   {
+    path: 'trabajos',
+    loadChildren: () => import('./trabajos/trabajos.module').then(m => m.TrabajosModule)
+  },
+  {
     path: '404',
     component: ErrorComponent,
   },
