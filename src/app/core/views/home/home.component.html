@@ -1,3 +1,16 @@
 <h1 class="tittle">Posts</h1>
 <hr class="hr">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aliquam laudantium ipsam. Dolores sequi hic accusantium quos possimus totam veniam!</p>
+
+<div class="cards">
+  <section  *ngFor="let card of cardsPosts"
+            class="card"
+            [style]="card.bg">
+    <article class="card-content" loading="lazy">
+      <h1 class="card-content__tittle">{{card.title | titlecase}}</h1>
+      <p class="card-content__text">{{card.text}}</p>
+      <a class="card-content__link" [routerLink]="[card.url]">
+        <i class="icon ion-ios-paper"></i>{{ 'Leer' | uppercase}}
+      </a>
+    </article>
+  </section>
+</div>
