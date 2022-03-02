@@ -7,7 +7,7 @@
 
 # dependencies
 /node_modules
-
+assets
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
