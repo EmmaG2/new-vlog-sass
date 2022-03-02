@@ -1,14 +1,40 @@
 <footer class="footer">
-  <section class="footer-section">
-    <h4>Hola</h4>
-    <a href="hola" class="footer-section__link">Hola</a>
-  </section>
-  <section class="footer-section">
-    <h4>Hola</h4>
-    <a href="hola" class="footer-section__link">Hola</a>
-  </section>
-  <section class="footer-section">
-    <h4>Hola</h4>
-    <a href="hola" class="footer-section__link">Hola</a>
+  <section class="footer-caja">
+    <article class="footer-item">
+      <figure class="logo">
+        <a routerLink="/core/homeposts">
+          <img src="../../../../assets/ezra-white.png" width="220px" height="82px" alt="logo de ezra">
+        </a>
+      </figure>
+    </article>
+    <article class="footer-item">
+      <h1 class="footer-item__title">Sobre Ezra</h1>
+      <p class="footer-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum sapiente neque.</p>
+      <p class="footer-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum sapiente neque.</p>
+    </article>
+    <article class="footer-item">
+      <h2 class="footer-item__title">Contáctanos</h2>
+      <div class="footer-item__redes">
+        <a href="" class="footer-item__links"><i class="icon ion-logo-google"></i></a>
+        <a href="" class="footer-item__links"><i class="icon ion-logo-whatsapp"></i></a>
+        <a href="" class="footer-item__links"><i class="icon ion-logo-github"></i></a>
+        <article class="footer-button">
+          <a  class="footer-button__link" (click)="irArriba()">
+            <i class="icon ion-ios-arrow-up newlogo"></i>
+            Ir hacia arriba
+          </a>
+        </article>
+      </div>
+    </article>
   </section>
 </footer>
+<section class="footer-text">
+  <p class="ter-text__me" >&copy; 2022 <b>Ezra Hw & Tech</b> - Todos los derechos reservados</p>
+</section>
+<section class="footer-text">
+  <p>Maded with 💗 by Emmanuel Rodríguez Granados</p>
+</section>
+<section class="footer-text">
+  <a href="https://angular.io/" target="_BLANK"><i class="redA icon ion-logo-angular"></i></a>
+  <a href="https://sass-lang.com/" target="_BLANK"><i class="pink icon ion-logo-sass"></i></a>
+</section>

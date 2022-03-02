@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  irArriba() {
+    const header = document.querySelector('.main');
+    header?.scrollIntoView({behavior: 'smooth'});
+  }
+
 }

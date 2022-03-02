@@ -1,9 +1,130 @@
-.footer {
-  background: red;
-  height: 20rem;
-  padding: 2em;
+@import 'colors';
+@import 'sizes';
+
+.logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.footer {
+  padding: 1em;
+  background-color: $ezra-black;
+  color: $ezra-white;
+
+  &-item__title {
+    text-align: center;
+    font-size: $font-size-header * 1.34;
+
+    &::first-letter {
+      font-size: $font-size-header * 1.85;
+      color: $ezra-red;
+    }
+  }
+
+  &-name {
+    display: inline-flex;
+    line-height: 0;
+    margin: 0;
+  }
+
+  &-item__text {
+    text-align: center;
+  }
+
+  &-item__redes {
+    text-align: center;
+  }
+
+  &-button {
+    padding: 10px;
+
+    &__link {
+      background: $ezra-blue;
+      padding: .5em 1em;
+      border-radius: $border-cards;
+      outline: none;
+      border: none;
+      color: $ezra-white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+
+  &-item__links {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px;
+    background-color: $ezra-black2;
+    border-radius: $border-cards;
+    color: $ezra-white;
+  }
+
+  &-caja {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 2em 0;
+  }
+
+  &-text {
+    padding: 10px;
+    color: $ezra-white;
+    background: $ezra-black2;
+    text-align: center;
+
+    .icon {
+      font-size: 2.5rem;
+      margin: 0 5px;
+    }
+
+    &__me {
+      margin: 0 6px;
+
+      &::first-letter {
+        font-family: 'lemon milk';
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .icon {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+}
+
+.blue::first-letter {
+  color: $ezra-blue;
+  height: 10px;
+}
+
+
+.redA {
+  color: $ezra-red;
+}
+
+.red::first-letter {
+  color: $ezra-red;
+}
+
+.pink {
+  color: $ezra-pink-sass;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-caja {
+    grid-template-columns: 1fr;
+    grid-gap: 1;
+    padding: 1em 0;
+  }
 }
