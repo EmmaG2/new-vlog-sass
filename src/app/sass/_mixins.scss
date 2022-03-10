@@ -1,0 +1,9 @@
+@mixin btn($background-color, $color, $border) {
+  display: block;
+  background-color: $background-color;
+  color: $color;
+  padding: 1em;
+  border-radius: $border;
+  text-decoration: none;
+  text-align: center;
+}
