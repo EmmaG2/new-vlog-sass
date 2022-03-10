@@ -1,9 +1,41 @@
+@import 'colors';
+
 .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   position: absolute;
   width: 100%;
   height: 50vh;
-  background: url(../../../../assets/background-home/bg.jpg);
+  background: url(../../../../assets/background-home/back.jpg);
   background-size: cover;
   background-position: center center;
+
+  .article {
+    margin: 1em;
+  }
+}
+
+.title {
+  text-align: center;
+  margin: 1em;
+
+  .typed {
+    font-size: 72px;
+
+
+    &-blue {
+      background: $ezra-blue;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &-red {
+      background: $ezra-red;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
 }
