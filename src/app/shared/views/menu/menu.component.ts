@@ -11,35 +11,35 @@ export class MenuComponent {
 
   status: boolean = false;
   mostrar() {
-  this.status = !this.status;
+    this.status = !this.status;
   }
 
   menuData: menu[] = [
     {
       routeActive: 'main-menu__active1',
-      classHover : 'main-menu__hover1',
-      classIcon  : 'icon ion-ios-home',
-      text       : 'posts',
-      route      : './core/homeposts/'
+      classHover: 'main-menu__hover1',
+      classIcon: 'icon ion-ios-home',
+      text: 'posts',
+      route: './core/homeposts/'
     },
     {
       routeActive: 'main-menu__active2',
-      classHover : 'main-menu__hover2',
-      classIcon  : 'icon ion-ios-person',
-      text       : 'about',
-      route      : './core/about'
+      classHover: 'main-menu__hover2',
+      classIcon: 'icon ion-ios-person',
+      text: 'about',
+      route: './core/about'
     },
-    {
-      routeActive: 'main-menu__active1',
-      classHover : 'main-menu__hover1',
-      classIcon  : 'icon ion-ios-call',
-      text       : 'contacto',
-      route      : './core/contacto'
-    },
+    // {
+    //   routeActive: 'main-menu__active1',
+    //   classHover : 'main-menu__hover1',
+    //   classIcon  : 'icon ion-ios-call',
+    //   text       : 'contacto',
+    //   route      : './core/contacto'
+    // },
   ];
 
   scrollTop() {
     const header = document.querySelector('.main');
-    header?.scrollIntoView({behavior: 'smooth'});
+    header?.scrollIntoView({ behavior: 'smooth' });
   }
 }
