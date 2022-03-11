@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: calc(55vh - 166px) 1em 1em;
+  margin: calc(48vh - 166px) 0 0 0;
+  padding-top: 6rem;
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    margin: 55vh 1em 1em;
+    margin: 45vh 0 0;
+    padding-top: 50px;
   }
 }
