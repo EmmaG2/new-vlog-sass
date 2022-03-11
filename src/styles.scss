@@ -1,4 +1,7 @@
 @import 'colors';
+@import 'mixins';
+@import 'colors';
+@import 'sizes';
 
 @font-face {
   font-family: 'lemon milk';
@@ -33,4 +36,30 @@ html {
 html {
   scrollbar-width: thin;
   scrollbar-color: $ezra-red $ezra-gray;
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding-top: 50px;
+  padding: 5px;
+
+  .post {
+
+    &-content {
+      text-align: left;
+      margin: .55em;
+    }
+
+    &-link {
+      @include btn($ezra-red, $ezra-white, $border-cards);
+    }
+  }
 }
