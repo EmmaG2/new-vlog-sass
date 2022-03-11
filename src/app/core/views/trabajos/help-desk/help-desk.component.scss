@@ -1,0 +1,28 @@
+@import 'mixins';
+@import 'colors';
+@import 'sizes';
+
+.title {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 1em 2em;
+
+  .post {
+    text-align: center;
+
+    &-content {
+      margin: 1em;
+    }
+
+    &-link {
+      @include btn($ezra-red, $ezra-white, $border-cards);
+    }
+  }
+}
