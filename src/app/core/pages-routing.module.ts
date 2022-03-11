@@ -17,15 +17,12 @@ const routes: Routes = [
     path: '',
     children: [
       { path: 'homeposts', component: HomeComponent },
-      { path: 'posts',
+      {
+        path: 'posts',
         children: [
           {
             path: 'niveles-de-soporte',
             component: NivelesSpteComponent
-          },
-          {
-            path: 'tipos-de-soporte',
-            component: SupportTypesComponent
           },
           {
             path: 'tipos-de-soporte',
@@ -57,8 +54,8 @@ const routes: Routes = [
           }
         ],
       },
-      { path: 'contacto', component: ContactoComponent,},
-      { path: 'about', component: AboutComponent,},
+      { path: 'contacto', component: ContactoComponent, },
+      { path: 'about', component: AboutComponent, },
       { path: '**', redirectTo: 'homeposts', pathMatch: 'full' }
     ],
   },
@@ -68,4 +65,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }
