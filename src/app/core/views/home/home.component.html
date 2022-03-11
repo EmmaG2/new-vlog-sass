@@ -1,4 +1,14 @@
-<h1 class="tittle">Posts</h1>
+<section class="content">
+  <h1 class="tittle">Soporte Presencial</h1>
+  <hr class="hr">
+  <p class="post-content">El soporte técnico presencial es un tipo de servicio al cliente en el que un representante capacitado de tu empresa se reúne personalmente con quien solicitó ayuda. Las reparaciones necesarias se llevan a cabo con herramientas físicas y suelen ser más complejas.</p>
+  <br>
+  <h2 class="tittle">Soporte a Distancia</h2>
+  <hr class="hr">
+  <p class="post-content">El soporte técnico a distancia busca solucionar de manera remota las posibles fallas de una computadora o dispositivo electrónico, ya sea un problema físico de alguna de sus piezas (hardware) o del programa o sistema operativo que se esté utilizando (software).</p>
+</section>
+
+<h3 class="tittle">Posts</h3>
 <hr class="hr">
 
 <div class="cards">
@@ -8,7 +18,8 @@
     <article class="card-content" loading="lazy">
       <h1 class="card-content__tittle">{{card.title | titlecase}}</h1>
       <p class="card-content__text">{{card.text}}</p>
-      <a class="card-content__link" [routerLink]="[card.url]">
+      <a class="card-content__link"
+          [routerLink]="[card.url]">
         <i class="icon ion-ios-paper"></i>{{ 'Leer' | uppercase}}
       </a>
     </article>

@@ -28,28 +28,33 @@ export class HomeComponent {
     },
     {
       title: 'Atributos de Atención al Cliente',
-      bg: 'background: url(../../../../assets/bg-cards/card3.jpg)',
+      bg: 'background: url(../../../../assets/bg-cards/card4.jpg)',
       text: 'lorem ipsum dolor',
       url: '/core/posts/atributos-atencion-al-cliente'
     },
     {
       title: 'Conceptos Básicos de Soporte Técnico',
-      bg: 'background: url(../../../../assets/bg-cards/card3.jpg)',
+      bg: 'background: url(../../../../assets/bg-cards/card5.jpg)',
       text: 'lorem ipsum dolor',
       url: '/core/posts/conceptos-soporte-tecnito'
     },
     {
       title: 'Atención al Cliente y Experiencia',
-      bg: 'background: url(../../../../assets/bg-cards/card3.jpg)',
+      bg: 'background: url(../../../../assets/bg-cards/card6.jpg)',
       text: 'lorem ipsum dolor',
       url: '/core/posts/atencion-al-cliente'
     },
     {
       title: 'Tipos de Clientes',
-      bg: 'background: url(../../../../assets/bg-cards/card3.jpg)',
+      bg: 'background: url(../../../../assets/bg-cards/card7jpg.jpg)',
       text: 'lorem ipsum dolor luih',
       url: '/core/posts/tipos-clientes'
     }
   ];
+
+  scrollTop() {
+    const header = document.querySelector('.title');
+    header?.scrollIntoView({behavior: 'smooth'});
+  }
 
 }
