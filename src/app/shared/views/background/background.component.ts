@@ -12,8 +12,10 @@ export class BackgroundComponent implements OnInit {
     const settings = new Typed('.typed', {
       strings: [
         'Ezra',
-        'Cristianos',
-        'Profesionales'
+        'Integros',
+        'Profesionales',
+        'Entusiasmo',
+        'Responsabilidad'
       ],
       smartBackspace: true,
       loop: true,
